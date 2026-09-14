@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  @apply min-h-screen pt-10;
+  @apply min-h-screen pt-4;
 }
 h1 {
   @apply max-sm:text-[3rem] text-6xl  text-gradient leading-tight xl:tracking-[-2px] font-semibold;
@@ -81,11 +81,11 @@ form {
     @apply flex flex-col items-center gap-8 max-w-4xl text-center max-sm:gap-4;
   }
   .resumes-section {
-    @apply flex flex-wrap max-md:flex-col max-md:gap-4 gap-6 items-start max-md:items-center w-full max-w-[1850px] justify-evenly;
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-24 justify-items-center w-full max-w-[1850px] mx-auto;
   }
 
   .resume-card {
-    @apply flex flex-col gap-8 h-[560px] w-[350px] lg:w-[430px] xl:w-[490px] bg-white rounded-2xl p-4;
+    @apply flex flex-col gap-6 mb-4 h-[480px] w-[320px] lg:w-[360px] xl:w-[400px] bg-white rounded-2xl p-4;
   }
 
   .resume-card-header {
@@ -97,7 +97,7 @@ form {
   }
 
   .navbar {
-    @apply flex flex-row justify-between items-center bg-white rounded-full p-4 w-full px-10 max-w-[1200px] mx-auto;
+    @apply flex flex-row justify-between items-center bg-white rounded-full p-4 w-full px-8 max-w-300 mx-auto;
   }
 
   .score-badge {
@@ -149,4 +149,4 @@ form {
   to {
     opacity: 1;
   }
-}
+}/* hmr-test */
